@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Iteration in Flask</title>
+    </head>
+
+    <body>
+        <h1>This is how you display all elements of a collection!</h1>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Number</td>
+            </tr>
+            {% for name, number in numbers.iteritems() %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ number }}</td>
+                </tr>
+            {% endfor %}                
+    </body>
+</html>
